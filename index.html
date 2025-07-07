@@ -3,9 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naveen C - Middleware Admin</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Naveen C - Middleware & Cloud Engineer</title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --light-bg: #ecf0f1;
+      --text-dark: #2d3436;
+      --card-bg: #ffffff;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: var(--primary);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    header {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .grid span {
+      background: var(--secondary);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    iframe {
+      border-radius: 10px;
+      border: none;
+    }
+
+    a {
+      color: var(--secondary);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .grid {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -21,18 +152,19 @@
   </nav>
 
   <header>
-    <h1>Middleware System Administrator</h1>
-    <p>Azure Certified | WebSphere Expert | DevOps Enthusiast</p>
+    <h1>Middleware & Cloud Engineer</h1>
+    <p>IBM WebSphere | Azure | DevOps | Kubernetes</p>
   </header>
 
   <main>
+
     <section id="about" class="card">
       <h2>About Me</h2>
-      <p><li>I am a dedicated Middleware and Cloud Engineer with over 3 years of professional experience in delivering robust, scalable, and secure enterprise solutions. At TCS, I have specialized in IBM WebSphere Application Server administration, Azure cloud services, and CI/CD automation using Azure DevOps, ensuring high availability and seamless deployment for mission-critical applications.</li>
-
-       <li> My expertise lies in managing end-to-end middleware environments, troubleshooting complex infrastructure issues, optimizing server performance, and supporting 24/7 production operations for large-scale healthcare clients. I excel at bridging the gap between infrastructure and development teams, streamlining workflows, and enhancing operational efficiency.</li>
-        
-       <li> Adaptable, detail-oriented, and continuously learning, I thrive in dynamic environments and am committed to driving innovation through reliable middleware and cloud solutions.</li></p>
+      <p>
+        <li>Dedicated Middleware and Cloud Engineer with over 3 years of experience in deploying and maintaining secure, scalable infrastructure for enterprise systems.</li>
+        <li>Skilled in IBM WebSphere, Azure Cloud, CI/CD pipelines, and supporting production environments for critical healthcare applications.</li>
+        <li>Proven ability to troubleshoot, optimize, and automate workflows across cross-functional teams and technologies.</li>
+      </p>
     </section>
 
     <section id="skills" class="card">
@@ -51,53 +183,56 @@
     </section>
 
     <section id="experience" class="card">
-      <h2>Experience</h2>
-      <h3>TATA Consultancy Services (2022 – Present)</h3>
+      <h2>Experience - TATA Consultancy Services (2022 – Present)</h2>
       <ul>
-        <li><b>IBM WebSphere Administration (8.5 ND) </b>– Install, configure, and patch standalone and clustered cells on AIX, Linux, and Windows, following IBM hardening guidelines to keep enterprise middleware fully supported and secure</li>
-        <li><b>End-to-End Environment Ownership </b>– Support Dev, QA, UAT, and 24 × 7 production stacks; deploy fix packs and cumulative interim fixes under ITIL change-management to maintain 99.9 % uptime for healthcare workloads. </li>
-        <li><b>Real-Time Incident Resolution </b>– Analyse JVM thread/heap dumps to clear hung threads and memory leaks, restoring service inside strict SLAs and safeguarding patient-critical applications.</li>
-        <li><b>Performance & Scalability </b>– Create vertical/horizontal clusters, tune JVM heaps, connection pools, and thread pools to maximise throughput and minimise latency under peak loads.</li>
-        <li><b>Deployment & Automation </b> – Orchestrate EAR/WAR rollouts across multiple WebSphere instances; script repetitive tasks and cluster build-outs to cut manual effort and speed releases</li>
-        <li><b>Secure Connectivity </b>– Configure SSL/TLS with self-signed and CA-signed certificates for encrypted channels between IHS and WebSphere, meeting compliance and audit requirements</li>
-        <li><b>Web-Tier Management </b>– Build and maintain Apache / IBM HTTP Server, generate & propagate plug-ins, and tune worker properties to ensure efficient request routing between web and application tiers.</li>
+        <li><b>IBM WebSphere Admin:</b> Installed, configured, and maintained clusters on AIX, Linux, and Windows servers.</li>
+        <li><b>Production Support:</b> Delivered 24/7 support for mission-critical healthcare environments, maintaining 99.9% uptime.</li>
+        <li><b>Performance Tuning:</b> Optimized JVM, clusters, thread pools for better throughput and responsiveness.</li>
+        <li><b>Automation:</b> Scripted deployments and cluster setup tasks for faster delivery cycles.</li>
+        <li><b>Security:</b> Configured SSL/TLS, CA certificates, and compliance for audits.</li>
+        <li><b>Web Tier:</b> Managed Apache, IHS, plug-ins, and routing configurations.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Cloud Engineer (Azure)</h2>
+      <ul>
+        <li>Provisioned and managed VMs, App Services, and Storage Accounts in Azure.</li>
+        <li>Built CI/CD pipelines using Azure DevOps for automated testing and deployment.</li>
+        <li>Used ARM templates and YAML for infrastructure as code (IaC).</li>
+        <li>Monitored environments using Azure Monitor and Log Analytics.</li>
+        <li>Collaborated with Dev and DB teams to design scalable cloud solutions.</li>
+        <li>Worked on microservices deployment in Azure Kubernetes Service (AKS).</li>
+        <li>Managed data pipelines using Azure Data Factory and Azure SQL.</li>
       </ul>
     </section>
 
     <section id="certifications" class="card">
       <h2>Certifications</h2>
       <ul>
-        <li>AZ-900: Azure Fundamentals</li>
-        <li>AZ-204: Azure Developer</li>
-        <li>AZ-400: Azure DevOps</li>
-        <li>DP-900: Data Fundamentals</li>
-        <li>DP-203: Data Engineering</li>
+        <li><strong>AZ-900: Microsoft Azure Fundamentals</strong><br>
+          Core cloud concepts, Azure architecture, governance, and pricing models.</li><br>
+        <li><strong>AZ-204: Developing Solutions for Azure</strong><br>
+          App development using Azure SDKs, Functions, Cosmos DB, and monitoring tools.</li><br>
+        <li><strong>AZ-400: DevOps Engineer Expert</strong><br>
+          CI/CD pipelines, YAML, infra automation, GitHub/Azure Repos, and Azure Monitor.</li><br>
+        <li><strong>DP-900: Azure Data Fundamentals</strong><br>
+          Data storage types, analytics workloads, Synapse and Cosmos DB fundamentals.</li><br>
+        <li><strong>DP-203: Data Engineering on Azure</strong><br>
+          Data Factory, Data Lake, Synapse, and large-scale ETL operations on Azure.</li>
       </ul>
     </section>
 
-      <section id="experience" class="card">
-        <h2>Cloud Engineer </h2>
-        <ul>
-        <li>Provisioned and managed Azure cloud resources including Virtual Machines, Azure App Services, and Storage Accounts</li>
-        <li>Implemented CI/CD pipelines using Azure DevOps to streamline build, test, and deployment processes.</li>
-        <li>Worked on Infrastructure as Code (IaC) using ARM templates and YAML pipelines for environment consistency</li>
-        <li>Integrated Azure Monitor and Log Analytics for observability and issue diagnostics.</li>
-        <li>Collaborated with application and database teams to design scalable, secure, and cost-optimized cloud solutions.</li>
-        <li>Automated deployment processes for microservices and web applications hosted in Azure App Services and Kubernetes (AKS).</li>
-        <li>Supported data operations for cloud-based data pipelines using Azure Data Factory and Azure SQL</li>
-        </ul>
-    </section>
     <section id="resume" class="card">
-        <h2>My Resume</h2>
-        <iframe src="Naveen_Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
-      </section>
-      
+      <h2>My Resume</h2>
+      <iframe src="Naveen_Resume.pdf" width="100%" height="600px"></iframe>
+    </section>
 
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p><i class="fas fa-envelope"></i> <a href="mailto:cnaveen014@gmail.com">cnaveen014@gmail.com</a></p>
       <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/naveen-c-227075190" target="_blank">LinkedIn</a></p>
-      <p><i class="fas fa-map-marker-alt"></i> Chennai </p>
+      <p><i class="fas fa-map-marker-alt"></i> Chennai</p>
       <p><i class="fas fa-phone-alt"></i> +91 63820 55634</p>
     </section>
   </main>
@@ -106,6 +241,9 @@
     <p>© <span id="year"></span> Naveen C — All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
